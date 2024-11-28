@@ -12,5 +12,17 @@ namespace MyLibrary
         public string Name { get; }
         public decimal UnitPrice { get; }
         public int UnitsInStock { get;}
+
+
+
+        public Product(int id, string name, decimal unitPrice, int unitsInStock)
+        {
+            Id = id;
+            Name = name;
+            UnitPrice = unitPrice;
+            UnitsInStock = unitsInStock;
+        }
     }
+
+
 }
