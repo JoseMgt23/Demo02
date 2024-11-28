@@ -8,9 +8,9 @@ namespace MyLibrary
 {
     public class Product
     {
-        public int Id;
-        public string Name;
-        public decimal UnitPrice;
-        public int UnitsInStock;
+        public int Id { get; }
+        public string Name { get; }
+        public decimal UnitPrice { get; }
+        public int UnitsInStock { get;}
     }
 }
