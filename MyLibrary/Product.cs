@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyLibrary
 {
-    public class Product
+    public class Product(int id, string name, decimal unitPrice, int unitsInStock)
     {
         public int Id { get; }
         public string Name { get; }
@@ -22,6 +22,7 @@ namespace MyLibrary
             UnitPrice = unitPrice;
             UnitsInStock = unitsInStock;
         }
+
     }
 
 
