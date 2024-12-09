@@ -16,7 +16,7 @@ namespace MyLibrary
 
     }
     
-    public class Product2 (int id, string name, decimal unitPrice, int unitsInStock, bool discontinued) : Product (id,name,unitPrice,unitsInStock)
+    public class Product2 (int id, string name,bool discontinued) : Product (id,name,default, default)
     { 
         public bool Discontinued {  get; set; } = discontinued;
     }
