@@ -15,6 +15,10 @@ namespace MyLibrary
         public int UnitsInStock => unitsInStock;
 
     }
-
+    
+    public class Product2 (int id, string name, decimal unitPrice, int unitsInStock, bool discontinued) : Product (id,name,unitPrice,unitsInStock)
+    { 
+        public bool Discontinued {  get; set; } = discontinued;
+    }
 
 }
