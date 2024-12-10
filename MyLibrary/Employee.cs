@@ -13,7 +13,15 @@ namespace MyLibrary
 
         public string Name { get; set; }
 
-        public abstract decimal CalculaMonthlyPayment();
+        public int GeInt()
+        {
+            return 5;
+        }
+
+        public virtual decimal CalculaMonthlyPayment()
+        {
+            return 12000;
+        }
     }
 
     public class Secretary : Employee
@@ -24,7 +32,15 @@ namespace MyLibrary
 
     public class Manager : Employee
     {
+        public override decimal CalculaMonthlyPayment()
+        {
+            return 30000;
+        }
+    }
+
+    public class Developer : Employee
+    {
 
     }
-        
+
 }
