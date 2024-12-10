@@ -6,8 +6,9 @@ Employee Maria =  new Secretary();
 Maria.Name = "Maria";
 Employee Pedro = new Manager();
 Pedro.Name = "Pedro";
-Employee Miguel = new Developer();
+Developer Miguel = new Developer();
 Miguel.Name = "Miguel";
+Console.WriteLine($"Dias:{Miguel.GetPaymentDays()}");
 
 WriteEmployeeInfo(Maria);
 WriteEmployeeInfo(Pedro);
