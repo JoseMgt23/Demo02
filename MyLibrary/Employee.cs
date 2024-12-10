@@ -22,6 +22,11 @@ namespace MyLibrary
         {
             return 12000;
         }
+
+        public int GePaymentDays()
+        {
+            return 30;
+        }
     }
 
     public class Secretary : Employee
